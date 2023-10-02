@@ -1,0 +1,6 @@
+[Unit]
+Description=Set my custom power limits.
+[Service]
+ExecStart=/usr/lib/asus-ryzen-power/applypowerconfig.sh
+[Install]
+WantedBy=default.target
