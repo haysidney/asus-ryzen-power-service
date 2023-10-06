@@ -5,7 +5,7 @@ DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 # use the original ryzen_smu repo for any other ryzen cpu
 # https://github.com/leogx9r/ryzen_smu
 git clone https://gitlab.com/moson-mo/ryzen_smu.git
-make -C $DIR/ryzen_smu
+make -B -C $DIR/ryzen_smu
 
 mkdir -p /usr/lib/asus-ryzen-power
 cp $DIR/lib/* /usr/lib/asus-ryzen-power/
